@@ -4,7 +4,7 @@ import "testing"
 
 func TestBloomFilter(t *testing.T) {
 	items := []string{"foo", "bar", "baz", "qux"}
-	bf := NewBloomFilter(25, 5)
+	bf := New(25, 5)
 
 	// Add items to the bloom filter and verify size
 	for _, item := range items {

@@ -56,7 +56,7 @@ func (bf *BloomFilter) Size() int {
 	return bf.numItems
 }
 
-func NewBloomFilter(numBits int, numHashes int) *BloomFilter {
+func New(numBits int, numHashes int) *BloomFilter {
 	return &BloomFilter{
 		bits:      bitset.New(numBits),
 		numBits:   numBits,
